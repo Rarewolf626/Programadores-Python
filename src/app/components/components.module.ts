@@ -16,6 +16,10 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     PrimeNgImportsModule,
     FormsModule
+  ],
+  exports :[
+    UiInputComponent,
+    UiPasswordInputComponent
   ]
 })
 export class ComponentsModule { }

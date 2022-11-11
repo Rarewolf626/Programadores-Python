@@ -6,6 +6,7 @@ import { PublicComponent } from './public.component';
 import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { PrimeNgImportsModule } from 'src/app/prime-ng-imports/prime-ng-imports.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
   imports: [
     CommonModule,
     PublicRoutingModule,
-    ComponentsModule
-  ]
+    ComponentsModule,
+    PrimeNgImportsModule
+  ],
 })
 export class PublicModule { }
