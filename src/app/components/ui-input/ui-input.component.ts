@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ui-input',
@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ui-input.component.css']
 })
 export class UiInputComponent implements OnInit {
-
+  @Input() label! : string;
+  @Input() errorMessage! : string;
+  @Input() type! : string;
+  valid : boolean = false;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,13 +1,7 @@
 .bg-image {
-    /* The image used */
-    background-image: url("/assets/images/cinema.jpg");
-  
-
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
+    background-image: url("/assets/images/cinema.jpg") ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+

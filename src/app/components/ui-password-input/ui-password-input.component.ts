@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UiPasswordInputComponent implements OnInit {
   @Input() text! : string;
+  valid : boolean = false;
   constructor() { }
+  
 
   ngOnInit(): void {
   }
