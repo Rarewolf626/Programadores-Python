@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { UiLinkLabelComponent } from './ui-link-label/ui-link-label.component';
 import { RouterModule } from '@angular/router';
 import { UiSideBarComponent } from './ui-side-bar/ui-side-bar.component';
+import { UiMenuBarComponent } from './ui-menu-bar/ui-menu-bar.component';
 
 
 
@@ -15,7 +16,8 @@ import { UiSideBarComponent } from './ui-side-bar/ui-side-bar.component';
     UiInputComponent,
     UiPasswordInputComponent,
     UiLinkLabelComponent,
-    UiSideBarComponent
+    UiSideBarComponent,
+    UiMenuBarComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { UiSideBarComponent } from './ui-side-bar/ui-side-bar.component';
   exports :[
     UiInputComponent,
     UiPasswordInputComponent,
-    UiLinkLabelComponent
+    UiLinkLabelComponent,
+    UiMenuBarComponent
   ]
 })
 export class ComponentsModule { }

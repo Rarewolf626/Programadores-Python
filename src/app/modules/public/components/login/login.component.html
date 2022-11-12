@@ -11,12 +11,14 @@
       </div>
       <div class="md: w-6 px-4">
         <div class="block text-justify">
-          <app-ui-input
-          [errorMessage]="'Ingrese nombre de usuario valido'"
-          [label]="'Usuario'"
-          [type]="'username'"
-          ></app-ui-input>
-          <div class="col">
+          <div class="block">
+            <app-ui-input
+            [errorMessage]="'Ingrese nombre de usuario valido'"
+            [label]="'Usuario'"
+            [type]="'username'"
+            ></app-ui-input>
+          </div>
+          <div class="block">
             <app-ui-password-input [label]="'Contraseña'"></app-ui-password-input>
           </div>
         </div>
