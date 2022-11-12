@@ -1,1 +1,29 @@
-<p>signin works!</p>
+<div class="my-1  md: flex justify-content-center my-8">
+  <div
+    class="flex justify-content-center shadow-3 min-w-max md:shadow-6 flex border-round w-8 "
+  >
+  <div class="overflow-hidden sm:col-4 bg-image border-round-left">
+  </div>
+    <div class="col">
+      <p class="text-2xl">Registrarse</p>
+
+      <app-ui-input [label]="'Nombre'"></app-ui-input>
+      <app-ui-input [label]="'Apellido'"></app-ui-input>
+      <app-ui-input [label]="'Correo'"></app-ui-input>
+      <app-ui-input [label]="'Fecha de Nacimiento'"></app-ui-input>
+      <app-ui-input [label]="'Telefono'"></app-ui-input>
+      <app-ui-input [label]="'Nombre de Usuario'"></app-ui-input>
+      <app-ui-password-input [label]="'Constraseña'"></app-ui-password-input>
+      <app-ui-password-input [label]="'Repetir Constraseña'"></app-ui-password-input>
+      <div class=" md: flex justify-content-center py-2">
+        <p-button
+          label="Volver"
+          [routerLink]="['/']"
+          icon="pi pi-arrow-left"
+          class="px-2"
+        ></p-button>
+        <p-button label="Registrar" [routerLink]="['/login']" icon="pi pi-sign-in"></p-button>
+      </div>
+    </div>
+  </div>
+</div>

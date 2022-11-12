@@ -1,34 +1,32 @@
 <div class="flex justify-content-center my-8">
   <div
-    class="flex justify-content-center shadow-3 min-w-max md:shadow-3 flex border-round w-8"
+    class="flex justify-content-center shadow-3 min-w-max md:shadow-6 flex border-round w-8"
   >
-    <div class="overflow-hidden sm:col-6 bg-image border-round-left "></div>
+    <div class="overflow-hidden sm:col-6 bg-image border-round-left"></div>
     <div class="col my-4">
-      <div class="flex justify-content-center my-0 ">
-        <p class="text-lg text-center md:text-2xl text-center ">
+      <div class="flex justify-content-center my-0">
+        <p class="text-lg text-center md:text-2xl text-center">
           ¡Bienvenido a Cinemar!
         </p>
       </div>
       <div class="md: w-6 px-4">
         <div class="block text-justify">
-          <div class="col">
-            <app-ui-input
-            [errorMessage]="'Ingrese nombre de usuario valido'"
-            [label]="'Usuario'"
-            [type]="'username'"
+          <app-ui-input
+          [errorMessage]="'Ingrese nombre de usuario valido'"
+          [label]="'Usuario'"
+          [type]="'username'"
           ></app-ui-input>
-          </div>
           <div class="col">
-            <app-ui-password-input></app-ui-password-input>
+            <app-ui-password-input [label]="'Contraseña'"></app-ui-password-input>
           </div>
         </div>
-        <div class="block p-1 text-center">
-          <div class="flex">
-            <p-button
-              label="Registrese ahora"
-              styleClass="p-button-link text-center text-sm py-1 mx-2"
-            ></p-button>
-            <p-button label="ingresar" icon="pi pi-arrow-right"></p-button>
+        <div class="block p-1 text-center ">
+          <div class="flex ">
+            <app-ui-link-label
+              [label]="'Registrarse Ahora'"
+              [routeLink]="['/signin']"
+            ></app-ui-link-label>
+            <p-button label="ingresar" [routerLink]="['/private']" icon="pi pi-arrow-right"></p-button>
           </div>
         </div>
       </div>
