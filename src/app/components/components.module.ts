@@ -8,6 +8,7 @@ import { UiLinkLabelComponent } from './ui-link-label/ui-link-label.component';
 import { RouterModule } from '@angular/router';
 import { UiSideBarComponent } from './ui-side-bar/ui-side-bar.component';
 import { UiMenuBarComponent } from './ui-menu-bar/ui-menu-bar.component';
+import { UiIconBadgeComponent } from './ui-icon-badge/ui-icon-badge.component';
 
 
 
@@ -17,7 +18,8 @@ import { UiMenuBarComponent } from './ui-menu-bar/ui-menu-bar.component';
     UiPasswordInputComponent,
     UiLinkLabelComponent,
     UiSideBarComponent,
-    UiMenuBarComponent
+    UiMenuBarComponent,
+    UiIconBadgeComponent
   ],
   imports: [
     CommonModule,
