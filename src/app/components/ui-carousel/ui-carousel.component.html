@@ -1,0 +1,20 @@
+<p-carousel
+  [value]="items"
+  [numVisible]="3"
+  [numScroll]="3"
+  [circular]="false"
+  [autoplayInterval]="3000"
+  [responsiveOptions]="responsiveOptions"
+>
+  <ng-template pTemplate="header"> </ng-template>
+  <ng-template let-item pTemplate="item">
+    <div class="text-center mx-2">
+      <app-ui-card
+        [imageURL]="item.poster_path"
+        [header]="item.title"
+        [subheader]="item.original_title"
+        [rating]="item.vote_average"
+      ></app-ui-card>
+    </div>
+  </ng-template>
+</p-carousel>

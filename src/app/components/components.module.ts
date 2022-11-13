@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { UiSideBarComponent } from './ui-side-bar/ui-side-bar.component';
 import { UiMenuBarComponent } from './ui-menu-bar/ui-menu-bar.component';
 import { UiIconBadgeComponent } from './ui-icon-badge/ui-icon-badge.component';
+import { UiCardComponent } from './ui-card/ui-card.component';
+import { UiCarouselComponent } from './ui-carousel/ui-carousel.component';
 
 
 
@@ -19,7 +21,9 @@ import { UiIconBadgeComponent } from './ui-icon-badge/ui-icon-badge.component';
     UiLinkLabelComponent,
     UiSideBarComponent,
     UiMenuBarComponent,
-    UiIconBadgeComponent
+    UiIconBadgeComponent,
+    UiCardComponent,
+    UiCarouselComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +35,8 @@ import { UiIconBadgeComponent } from './ui-icon-badge/ui-icon-badge.component';
     UiInputComponent,
     UiPasswordInputComponent,
     UiLinkLabelComponent,
-    UiMenuBarComponent
+    UiMenuBarComponent,
+    UiCarouselComponent 
   ]
 })
 export class ComponentsModule { }

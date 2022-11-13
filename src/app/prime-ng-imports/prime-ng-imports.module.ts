@@ -5,6 +5,9 @@ import {ButtonModule} from 'primeng/button';
 import {MenubarModule} from 'primeng/menubar';
 import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
+import {CarouselModule} from 'primeng/carousel';
+import {CardModule} from 'primeng/card';
+import { RatingModule} from 'primeng/rating';
 @NgModule({
   exports : [
     PasswordModule,
@@ -12,7 +15,10 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
     ButtonModule,
     MenubarModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    CarouselModule,
+    CardModule,
+    RatingModule
   ]
 })
 export class PrimeNgImportsModule { }
