@@ -8,9 +8,10 @@ import { RootObject } from '../models/Movies';
 })
 export class MoviesService {
   serverUrl: string =
-    'https://api.themoviedb.org/3/movie/now_playing?api_key=1f54bd990f1cdfb230adb312546d765d&language=en-US';
+    'https://cinemar-api.vercel.app';
   constructor(private httpClient: HttpClient) {}
   getMovies(): Observable<RootObject> {
-    return this.httpClient.get<RootObject>(this.serverUrl);
+    let endpoint = '/movies'
+    return this.httpClient.get<RootObject>(this.serverUrl+endpoint);
   }
 }
