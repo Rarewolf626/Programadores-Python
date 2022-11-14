@@ -1,7 +1,10 @@
-<p-card
+<a  class="no-underline" (click)="getDetail()">
+  <p-card
   header="{{ header }}"
   subheader="{{ subheader }}"
-  styleClass="p-card-shadow min-h-full"
+  tooltipPosition="bottom"
+  pTooltip="Ver más de {{header}}"
+  styleClass="p-card-shadow min-h-full  border-round hover:bg-blue-800 text-gray-800 hover:text-white"
 >
   <ng-template pTemplate="header">
     <img alt="Card" src="{{'https://image.tmdb.org/t/p/original/'+imageURL}}" class="h-screen">
@@ -11,8 +14,9 @@
   </div>
   <ng-template pTemplate="footer">
     <div class="flex justify-content-center">
-      <p-rating [ngModel]="rating*0.5" [readonly]="true" [stars]="5" [cancel]="false"></p-rating>
+      <p-rating [ngModel]="rating * 0.5" [readonly]="true" [stars]="5"  [cancel]="false"></p-rating>
     </div>
   </ng-template>
 </p-card>
+</a>
 

@@ -11,7 +11,9 @@ import { UiMenuBarComponent } from './ui-menu-bar/ui-menu-bar.component';
 import { UiIconBadgeComponent } from './ui-icon-badge/ui-icon-badge.component';
 import { UiCardComponent } from './ui-card/ui-card.component';
 import { UiCarouselComponent } from './ui-carousel/ui-carousel.component';
-
+import { MovieDetailDialogComponent } from './movie-detail-dialog/movie-detail-dialog.component';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { UiCarouselComponent } from './ui-carousel/ui-carousel.component';
     UiMenuBarComponent,
     UiIconBadgeComponent,
     UiCardComponent,
-    UiCarouselComponent
+    UiCarouselComponent,
+    MovieDetailDialogComponent
   ],
   imports: [
     CommonModule,

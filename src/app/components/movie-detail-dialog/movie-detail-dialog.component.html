@@ -1,0 +1,41 @@
+<div class="grid justify-content-center">
+  <div class="col-5">
+    <img
+      src="{{ 'https://image.tmdb.org/t/p/original/' + movie.backdrop_path }}"
+      alt="movie"
+      style="width: 300px; height: 337px; object-fit: cover"
+      class="border-round"
+    />
+  </div>
+  <div class="grid">
+    <div class="col-12">
+      <p-tabView>
+        <p-tabPanel header="Descripción" [leftIcon]="'pi pi-search'">
+          <p class="text-md">Titulo Original: {{ movie.original_title }}</p>
+          <p class="text-md">Duración: {{ movie.runtime }} minutos</p>
+          <div style="display: inline">
+            Genero:
+              <p *ngFor="let item of movie.genres " class="inline font-bold">
+                {{ item.name }}
+              </p>
+          </div>
+          <div>
+            Producido por:
+              <p *ngFor="let item of movie.production_companies | slice:0:2" class="inline font-bold">
+                {{ item.name }}
+              </p>
+          </div>
+          <p class="text-md">Pagina Oficial: <a href="{{ movie.homepage }}">{{ movie.homepage }}</a> </p>
+        </p-tabPanel>
+        <p-tabPanel header="Trailer" [leftIcon]="'bi bi-film'">
+          Content 2
+        </p-tabPanel>
+        <p-tabPanel header="Funciones" [leftIcon]="'bi bi-camera-reels-fill'">
+          Content 3
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+</div>
+<!-- 
+{{ movie | json }} -->

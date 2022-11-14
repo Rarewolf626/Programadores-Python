@@ -1,0 +1,4 @@
+.skill-list{
+    display : flex;
+    justify-content: between;
+}
